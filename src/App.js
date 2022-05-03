@@ -22,7 +22,9 @@ function App() {
         <div className="menu-icon">
           <Menu onClick={handleClick} />
         </div>
-        {!openMenu && <NavItems />}
+        <div className="menu-dropdown-desktop">
+          <NavItems />
+        </div>
         {openMenu && <MenuOverlay setOpenMenu={setOpenMenu} />}
       </nav>
       <div className="herobanner">

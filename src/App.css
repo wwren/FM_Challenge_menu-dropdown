@@ -21,6 +21,10 @@ nav div {
   display: flex;
   align-items: center;
 }
+
+.menu-dropdown-desktop {
+  display: none;
+}
 /* hero image */
 img {
   width: 100%;
@@ -67,7 +71,7 @@ img {
   list-style: none;
 }
 
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 415px) {
   .herobanner__desktop {
     display: block;
     width: 40%;
@@ -112,5 +116,8 @@ img {
 
   .menu-icon {
     display: none;
+  }
+  .menu-dropdown-desktop {
+    display: block;
   }
 }
