@@ -1,0 +1,48 @@
+.menu-overlay {
+  height: 100vh;
+  background-color: var(--almost-white);
+  position: fixed;
+  width: 200px;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  color: var(--medium-gray);
+  font-weight: 500;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 200px;
+}
+
+.menu-overlay ul li {
+  padding-top: 15px;
+}
+
+.menu-overlay ul li span {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.menu-overlay ul ul {
+  padding-left: 20px;
+}
+
+.login {
+  text-align: center;
+  padding-left: 0;
+}
+
+.register {
+  border: 2px solid black;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+@media screen and (min-width: 414px) {
+  .close-btn {
+    display: none;
+  }
+}

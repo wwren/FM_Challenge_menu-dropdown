@@ -1,0 +1,27 @@
+.menu-items {
+  display: flex;
+  width: 80vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-items ul {
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+.menu-items ul :hover {
+  cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  flex-direction: column;
+  padding-left: 0;
+  top: 80px;
+  padding: 20px;
+}

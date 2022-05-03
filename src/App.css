@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+:root {
+  --almost-white: hsl(0, 0%, 98%);
+  --medium-gray: hsl(0, 0%, 41%);
+  --almost-black: hsl(0, 0%, 8%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul li {
+  list-style: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* nav */
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav div {
+  padding: 20px;
+}
+
+.logo {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* hero image */
+img {
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.herobanner__desktop {
+  display: none;
+}
+.herobanner {
+  text-align: center;
+  font-family: "Epilogue";
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.herobanner p {
+  color: var(--medium-gray);
+  padding: 20px;
+}
+
+.herobanner button {
+  padding: 20px 30px;
+  background-color: var(--almost-black);
+  color: var(--almost-white);
+  font-family: "Epilogue";
+  font-weight: 700;
+  border: none;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+.hero-content button:hover {
+  background-color: white;
+  color: black;
+}
+
+.client {
+  margin-top: 30px;
+  display: flex;
+  padding: 0;
+  margin-bottom: 0;
+  justify-content: space-evenly;
+}
+
+.client li {
+  list-style: none;
+}
+
+@media screen and (min-width: 414px) {
+  .herobanner__desktop {
+    display: block;
+    width: 40%;
+    height: fit-content;
+    margin-top: 100px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .herobanner__mobile {
+    display: none;
+  }
+
+  .herobanner {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .hero-content {
+    text-align: left;
+    padding: 40px 200px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+  .hero-content p {
+    padding: 0;
+  }
+
+  .hero-content h1 {
+    font-size: 70px;
+  }
+
+  .hero-content {
+    margin-top: 46px;
+  }
+
+  .client {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: none;
   }
 }
